@@ -2,8 +2,7 @@ version: '3.8'
 
 services:
   frontend:
-    platform: linux/arm64
-    image: gsemir/account-app-frontend:0.2.0
+    image: gsemir/account-app-frontend:0.2.1
     container_name: account-app-frontend
     ports:
       - "70:80"
@@ -12,8 +11,7 @@ services:
       - account-app-network
 
   backend:
-    platform: linux/arm64
-    image: gsemir/account-app-backend:0.1.1
+    image: gsemir/account-app-backend:0.1.2
     container_name: account-app-backend
     ports:
       - "7070:8080"
